@@ -12,19 +12,19 @@
 ## Schema
 
 ```graphql
-type Movie {
-    id: ID
-    name: String
-    producer: String
-    rating: Float
-  }
+typee Movie {
+  id: ID
+  name: String
+  producer: String
+  rating: Float
+}
 ```
 
 ```graphql
 type Query {
-    getMovies: [Movie]
-    getMovie(id: ID!): Movie
-  }
+  getMovies: [Movie]
+  getMovie(id: ID!): Movie
+}
   
 type Mutation {
   addMovie(name: String!, producer: String!, rating: Float!): Movie
