@@ -12,7 +12,7 @@
 ## Schema
 
 ```graphql
-typee Movie {
+type Movie {
   id: ID
   name: String
   producer: String
