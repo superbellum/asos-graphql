@@ -5,8 +5,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const {ApolloServer} = require('apollo-server-express');
 
-// connect to mongodb
-const connect = mongoose.connect("mongodb://localhost:27017/moviesdb", {useNewUrlParser: true});
+const connect = mongoose.connect("mongodb://127.0.0.1:27017/moviesdb", {useNewUrlParser: true});
 connect.then((db) => {
   console.log('Connected correctly to server!');
 }, (err) => {
@@ -24,5 +23,4 @@ app.use('*', cors());
 server.start().then(r => {
   server.applyMiddleware({app});
 })
-
 app.listen({port: 4000}, () => console.log(`Server ready at http://localhost:4000${server.graphqlPath}`));
