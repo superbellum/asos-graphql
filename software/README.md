@@ -106,7 +106,7 @@ mutation UpdateMovie($updateMovieId: ID!, $name: String, $producer: String, $rat
 }
 ```
 
-### Architecture
+## Architecture
 
 GraphQL is a popular API architecture implemented in many frameworks using different programming languages.
 The most important thing that a GraphQL API backend has to define is the schema, consisting of the object types and the operations upon them.
